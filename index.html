@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenode - LifeStaysSimple</title>
+    <meta name="description" content="Creative development, video editing & design — crafted with clarity and calm confidence.">
+    <meta name="author" content="Serenode">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <button onclick="scrollToSection('hero')" class="logo-btn">
+                        Serenode
+                    </button>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('services')" class="nav-link">Services</button>
+                    <button onclick="scrollToSection('portfolio')" class="nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-soft">Get Started</button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-btn">
+                    <button id="menu-toggle" class="menu-btn">
+                        <span class="menu-icon">☰</span>
+                        <span class="close-icon" style="display: none;">✕</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-nav">
+                <div class="mobile-nav-content">
+                    <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                    <button onclick="scrollToSection('services')" class="mobile-nav-link">Services</button>
+                    <button onclick="scrollToSection('portfolio')" class="mobile-nav-link">Portfolio</button>
+                    <button onclick="scrollToSection('contact')" class="mobile-nav-link">Contact</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-soft mobile-cta">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content">
+                <!-- Logo/Brand -->
+                <div class="hero-brand fade-in">
+                    <h1 class="hero-title">Serenode</h1>
+                    <p class="hero-subtitle">Life Is Simple</p>
+                </div>
+                
+                <!-- Main Tagline -->
+                <div class="hero-tagline fade-in-up">
+                    <h2 class="hero-description">
+                        Creative development, video editing & design — crafted with clarity and calm confidence.
+                    </h2>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-cta scale-in">
+                    <button class="btn btn-hero" onclick="scrollToSection('portfolio')">
+                        See Our Work
+                        <span class="btn-icon">→</span>
+                    </button>
+                    
+                    <button class="btn btn-outline" onclick="scrollToSection('contact')">
+                        <span class="btn-icon">▶</span>
+                        Get in Touch
+                    </button>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Text Content -->
+                    <div class="about-text">
+                        <div class="about-header">
+                            <h2 class="section-title">Intentional Innovation</h2>
+                            <p class="about-intro">
+                                At Serenode, we believe in the power of simplicity. Our mission is to create 
+                                digital experiences that breathe with clarity and purpose.
+                            </p>
+                        </div>
+                        
+                        <div class="about-points">
+                            <div class="about-point">
+                                <div class="point-dot accent"></div>
+                                <div class="point-content">
+                                    <h3 class="point-title">Creative Clarity</h3>
+                                    <p class="point-description">
+                                        Every pixel, every line of code, every cut is deliberate. We strip away the noise 
+                                        to reveal what truly matters.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="about-point">
+                                <div class="point-dot clay"></div>
+                                <div class="point-content">
+                                    <h3 class="point-title">Freedom in Simplicity</h3>
+                                    <p class="point-description">
+                                        True elegance lies in restraint. We create space for your ideas to flourish 
+                                        without overwhelming complexity.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="about-point">
+                                <div class="point-dot accent"></div>
+                                <div class="point-content">
+                                    <h3 class="point-title">Grounded Growth</h3>
+                                    <p class="point-description">
+                                        We approach every project with calm confidence, ensuring sustainable solutions 
+                                        that evolve with your vision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Creative workspace" 
+                                 class="workspace-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        
+                        <!-- Floating accents -->
+                        <div class="floating-accent accent-1"></div>
+                        <div class="floating-accent accent-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-description">
+                        We offer three core services, each approached with the same philosophy: 
+                        intentional design, calm execution, and meaningful results.
+                    </p>
+                </div>
+                
+                <!-- Services Grid -->
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-container">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="service-title">Video Editing</h3>
+                        
+                        <p class="service-description">
+                            Transform your raw footage into compelling stories. We craft visual narratives that captivate and inspire with precision editing and thoughtful pacing.
+                        </p>
+                        
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>Story-driven editing</li>
+                            <li><span class="feature-dot"></span>Color grading</li>
+                            <li><span class="feature-dot"></span>Motion graphics</li>
+                            <li><span class="feature-dot"></span>Audio enhancement</li>
+                        </ul>
+                        
+                        <button class="btn btn-soft service-btn">
+                            Learn More
+                            <span class="btn-icon">→</span>
+                        </button>
+                        
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-container">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="service-title">Web & App Development</h3>
+                        
+                        <p class="service-description">
+                            Clean, responsive digital experiences built with modern technologies. We create interfaces that feel natural and perform flawlessly.
+                        </p>
+                        
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>React & TypeScript</li>
+                            <li><span class="feature-dot"></span>Responsive design</li>
+                            <li><span class="feature-dot"></span>Performance optimization</li>
+                            <li><span class="feature-dot"></span>User-centered approach</li>
+                        </ul>
+                        
+                        <button class="btn btn-soft service-btn">
+                            Learn More
+                            <span class="btn-icon">→</span>
+                        </button>
+                        
+                        <div class="service-decoration"></div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <div class="icon-container">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h3 class="service-title">Visual Design & Branding</h3>
+                        
+                        <p class="service-description">
+                            Cohesive brand identities that speak to your audience. From logos to complete visual systems, we design with intention and clarity.
+                        </p>
+                        
+                        <ul class="service-features">
+                            <li><span class="feature-dot"></span>Brand identity</li>
+                            <li><span class="feature-dot"></span>Logo design</li>
+                            <li><span class="feature-dot"></span>Visual systems</li>
+                            <li><span class="feature-dot"></span>Print & digital assets</li>
+                        </ul>
+                        
+                        <button class="btn btn-soft service-btn">
+                            Learn More
+                            <span class="btn-icon">→</span>
+                        </button>
+                        
+                        <div class="service-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container-large">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Selected Work</h2>
+                    <p class="section-description">
+                        A curated collection of projects that showcase our commitment to clarity, 
+                        purpose, and beautiful simplicity.
+                    </p>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Mindful Commerce">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">Web Development</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Mindful Commerce</h3>
+                            <p class="portfolio-description">E-commerce platform designed for sustainable brands</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Ocean Waves">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">Video Editing</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Ocean Waves</h3>
+                            <p class="portfolio-description">Documentary series about marine conservation</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Documentary</span>
+                                <span class="tag">Color Grading</span>
+                                <span class="tag">Motion Graphics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Zen Garden">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">Brand Identity</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Zen Garden</h3>
+                            <p class="portfolio-description">Complete rebrand for wellness retreat center</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Logo Design</span>
+                                <span class="tag">Brand System</span>
+                                <span class="tag">Print Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Flow State">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">App Development</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Flow State</h3>
+                            <p class="portfolio-description">Meditation and mindfulness mobile application</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Mobile App</span>
+                                <span class="tag">UX/UI</span>
+                                <span class="tag">React Native</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Creative Spaces">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">Video Editing</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Creative Spaces</h3>
+                            <p class="portfolio-description">Promotional video series for co-working spaces</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Commercial</span>
+                                <span class="tag">Drone Footage</span>
+                                <span class="tag">Sound Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop&crop=center" 
+                                 alt="Pure Elements">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="portfolio-category">Web Development</div>
+                        </div>
+                        
+                        <div class="portfolio-content">
+                            <h3 class="portfolio-title">Pure Elements</h3>
+                            <p class="portfolio-description">Portfolio site for sustainable architecture firm</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Portfolio</span>
+                                <span class="tag">Animation</span>
+                                <span class="tag">CMS Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View All Button -->
+                <div class="portfolio-cta">
+                    <button class="btn btn-outline btn-large">
+                        View All Projects
+                        <span class="btn-icon">↗</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p class="section-description">
+                        Ready to bring your vision to life? We'd love to hear about your project 
+                        and explore how we can help you achieve your goals.
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-intro">
+                            <h3 class="contact-heading">Get In Touch</h3>
+                            <p class="contact-text">
+                                Whether you're looking to create a new brand identity, develop a digital platform, 
+                                or produce compelling video content, we're here to help bring clarity to your vision.
+                            </p>
+                        </div>
+                        
+                        <!-- Contact Methods -->
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="method-content">
+                                    <p class="method-label">Email</p>
+                                    <p class="method-value">contact.serenode@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon clay">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-content">
+                                    <p class="method-label">Response Time</p>
+                                    <p class="method-value">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Element -->
+                        <div class="contact-decoration">
+                            <div class="decoration-circle circle-1"></div>
+                            <div class="decoration-circle circle-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Details</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your project, goals, and how we can help..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-hero btn-large contact-submit">
+                                Send Message
+                                <span class="btn-icon">✈</span>
+                            </button>
+                        </form>
+                        
+                        <!-- Floating accent -->
+                        <div class="form-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Logo -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Serenode</h3>
+                    <p class="footer-tagline">Life Is Simple</p>
+                </div>
+                
+                <!-- Tagline -->
+                <p class="footer-description">
+                    Creating digital experiences with clarity, calm confidence, and intentional innovation.
+                </p>
+                
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <p class="footer-email">contact.serenode@gmail.com</p>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="footer-copyright">
+                    <span>© 2024 Serenode. Crafted with</span>
+                    <span class="heart">♥</span>
+                    <span>and intention.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

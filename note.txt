@@ -1,0 +1,91 @@
+<!-- Design a modern, minimalist website for a creative brand named “Serenode”.
+The brand offers video editing, development, and design services with a calm, intentional, and growth-focused approach.
+
+The design should reflect clarity, freedom, and trust, with smooth layouts, elegant whitespace, and soft, earthy tones. Use the following brand colors:
+
+Background: #f5f5f5 (off-white)
+
+Text/Logo: #006579 (deep teal)
+
+Accent: #7ceeb (light cyan)
+
+Optional accents: #B87A57 (warm clay), #3A4649 (slate gray)
+
+Use the Poppins font family — bold for headers, regular for body.
+
+
+---
+
+🧩 Site Structure:
+
+1. Hero Section
+
+
+
+Logo and brand name: Serenode
+
+Tagline: Life Is Simple
+
+Subheading: “Creative development, video editing & design — crafted with clarity and calm confidence.”
+
+CTA: See Our Work or Get in Touch
+
+2. About Section
+
+
+
+Describe the brand’s mission and calm, growth-focused values
+
+Include phrases like: “intentional innovation,” “creative clarity,” “freedom in simplicity”
+
+3. Services Section
+
+
+
+Clean icons or visuals for:
+
+Video Editing
+
+Web/App Development
+
+Visual Design & Branding
+
+Short descriptions with room to expand
+
+4. Portfolio Section
+
+
+
+Showcase work or concept visuals
+
+Grid-based or carousel format
+
+Option to add categories or filters
+
+5. Contact Section
+
+
+
+Email: contact.serenode@gmail.com
+
+Simple form with name, message, and send button
+
+Optional: social icons
+
+
+---
+
+🧘‍♂️ Design Tone & Feel
+
+Calm, grounded, and visually light
+
+Plenty of white space
+
+Smooth transitions or subtle scroll animations
+
+No clutter — everything intentional and confident
+
+Design the website using html, external css and JavaScript
+
+Follow as mentioned exactly here -->
+
